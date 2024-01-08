@@ -1,0 +1,49 @@
+.common-input {
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.325rem;
+    border: 0.0625rem solid orange;
+    min-height: 2.5rem;
+    outline: none;
+    box-sizing: border-box;
+    &:focus {
+        border: 0.0625rem solid #ced4da;
+    }
+    &:hover {
+        border-color: #ced4da;
+    }
+}
+
+/* File Input Styling */
+input[type="file"] {
+    display: none;
+}
+
+.label-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-file-input {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    color: #3498db;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-input:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Hide the original file input and style the custom one */
+input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
